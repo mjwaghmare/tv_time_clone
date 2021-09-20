@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
         BottomNavigationBarItem(
             icon: Tooltip(
               message: 'Movies',
-              child: Icon(Icons.movie_filter_sharp),
+              child: Icon(Icons.movie_sharp),
             ),
             label: 'Movies'),
         BottomNavigationBarItem(
