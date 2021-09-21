@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:tv_time_clone/screens/Discover/discover_section.dart';
-import 'package:tv_time_clone/screens/Movies/movies_section.dart';
-import 'package:tv_time_clone/screens/Profile/profile_section.dart';
-import 'package:tv_time_clone/screens/shows/shows_section.dart';
+import 'package:flutter/services.dart';
 
+import 'screens/Discover/discover_section.dart';
+import 'screens/Movies/movies_section.dart';
+import 'screens/Profile/profile_section.dart';
+import 'screens/shows/shows_section.dart';
 import 'screens/utils/app_colors.dart';
 
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    statusBarColor: AppColors.blackColor, // status bar color
+  ));
   runApp(MyApp());
 }
 
