@@ -49,7 +49,7 @@ class _ProfileState extends State<Profile> {
                                         Stack(
                                           children: [
                                             Image.asset(
-                                              "assets/images/profle_banner.jpg",
+                                              "assets/images/profile_banner.jpg",
                                               fit: BoxFit.cover,
                                               height: _size.height * 0.30,
                                             ),
@@ -60,7 +60,7 @@ class _ProfileState extends State<Profile> {
                                                 color: Colors.black.withOpacity(0.5),
                                                 child: const Center(
                                                   child: Text(
-                                                    'Rome the world',
+                                                    'Teen Wolf 🐺',
                                                     style: TextStyle(color: AppColors.whiteColor, fontSize: 24),
                                                   ),
                                                 ),
@@ -74,8 +74,9 @@ class _ProfileState extends State<Profile> {
                                                   top: 15,
                                                   left: 15,
                                                   child: Container(
-                                                    height: 40,
-                                                    width: 40,
+                                                    padding: const EdgeInsets.only(left: 3),
+                                                    height: 30,
+                                                    width: 30,
                                                     decoration: BoxDecoration(
                                                       shape: BoxShape.circle,
                                                       color: Colors.black.withOpacity(0.6),
@@ -95,8 +96,8 @@ class _ProfileState extends State<Profile> {
                                                   top: 15,
                                                   right: 15,
                                                   child: Container(
-                                                      height: 40,
-                                                      width: 40,
+                                                      height: 30,
+                                                      width: 30,
                                                       decoration: const BoxDecoration(
                                                         shape: BoxShape.circle,
                                                         color: AppColors.yellowColor,
