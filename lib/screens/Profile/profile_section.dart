@@ -338,6 +338,34 @@ class _ProfileState extends State<Profile> {
                 detailsTile("Comments", "0"),
                 detailsTile("Stats", ""),
                 const SizedBox(height: 20.0),
+                SizedBox(
+                  width: 130,
+                  child: ElevatedButton(
+                    onPressed: () {},
+                    style: ElevatedButton.styleFrom(
+                        // returns ButtonStyle
+                        primary: AppColors.greyColor,
+                        onPrimary: AppColors.blackColor,
+                        shape: const StadiumBorder()),
+                    child: Row(
+                      children: const [
+                        Icon(
+                          Icons.settings,
+                          size: 20,
+                        ),
+                        SizedBox(width: 10.0),
+                        Text(
+                          "SETTINGS",
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: AppColors.blackColor,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 30.0),
               ],
             ),
           )),
