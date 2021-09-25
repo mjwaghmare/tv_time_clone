@@ -15,8 +15,12 @@ class _DiscoverState extends State<Discover> {
       backgroundColor: AppColors.blackColor,
       body: Center(
         child: Text(
-          'DISCOVER',
-          style: TextStyle(color: AppColors.yellowColor, fontSize: 32),
+          "Discover",
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+            color: AppColors.yellowColor,
+          ),
         ),
       ),
     );

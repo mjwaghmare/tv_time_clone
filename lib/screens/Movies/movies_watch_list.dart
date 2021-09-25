@@ -13,7 +13,7 @@ class _MoviesWatchListState extends State<MoviesWatchList> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Center(
+      child: const Center(
         child: Text(
           "Movies Watch List",
           style: TextStyle(
