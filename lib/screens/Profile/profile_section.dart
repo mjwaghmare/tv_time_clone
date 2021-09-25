@@ -31,8 +31,7 @@ class _ProfileState extends State<Profile> {
                     children: [
                       Column(
                         children: [
-                          Container(
-                            color: Colors.yellow,
+                          SizedBox(
                             height: _size.height * 0.30,
                             child: PageView.builder(
                                 onPageChanged: (index) {
@@ -74,7 +73,7 @@ class _ProfileState extends State<Profile> {
                                                   top: 15,
                                                   left: 15,
                                                   child: Container(
-                                                    padding: const EdgeInsets.only(left: 3),
+                                                    padding: const EdgeInsets.only(left: 4, top: 2),
                                                     height: 30,
                                                     width: 30,
                                                     decoration: BoxDecoration(
