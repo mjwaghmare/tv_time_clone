@@ -148,17 +148,20 @@ class _ProfileState extends State<Profile> {
                 ),
                 //Profile
                 SizedBox(
-                  height: 80,
+                  height: 90,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Container(
-                            height: 20,
-                            width: 25,
-                            color: Colors.orange,
+                          SizedBox(
+                            height: 30,
+                            width: 35,
+                            child: Image.asset(
+                              "assets/images/ind_flag.png",
+                              fit: BoxFit.cover,
+                            ),
                           ),
                           const Padding(
                             padding: EdgeInsets.symmetric(horizontal: 20.0),
