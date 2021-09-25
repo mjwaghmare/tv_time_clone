@@ -327,13 +327,57 @@ class _ProfileState extends State<Profile> {
                             );
                           },
                         ),
-                      )
+                      ),
                     ],
                   ),
-                )
+                ),
+                //Details
+                detailsTile("Custom lists", "0"),
+                detailsTile("Followers", "12"),
+                detailsTile("Following", "14"),
+                detailsTile("Comments", "0"),
+                detailsTile("Stats", ""),
+                const SizedBox(height: 20.0),
               ],
             ),
           )),
+    );
+  }
+
+  InkWell detailsTile(String title, String value) {
+    return InkWell(
+      onTap: () {},
+      child: Container(
+        decoration: const BoxDecoration(
+          border: Border(
+            // top: BorderSide(width: 1.0, color: AppColors.greyColor),
+            bottom: BorderSide(width: 0.5, color: AppColors.greyColor),
+          ),
+        ),
+        child: ListTile(
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                title,
+                style: const TextStyle(color: AppColors.whiteColor, fontSize: 18),
+              ),
+              Row(
+                children: [
+                  Text(
+                    value,
+                    style: const TextStyle(color: AppColors.whiteColor, fontSize: 18),
+                  ),
+                  const Icon(
+                    Icons.chevron_right_rounded,
+                    color: AppColors.whiteColor,
+                  )
+                ],
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 
