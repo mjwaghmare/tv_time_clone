@@ -13,10 +13,12 @@ class Profile extends StatefulWidget {
 
 class _ProfileState extends State<Profile> {
   int _selectedPage = 0;
+  PageController _pageController = PageController();
 
   @override
   Widget build(BuildContext context) {
     Size _size = MediaQuery.of(context).size;
+
     return SafeArea(
       child: Scaffold(
           extendBodyBehindAppBar: true,
@@ -34,10 +36,16 @@ class _ProfileState extends State<Profile> {
                           SizedBox(
                             height: _size.height * 0.30,
                             child: PageView.builder(
+                                controller: _pageController,
                                 onPageChanged: (index) {
                                   setState(() {
                                     _selectedPage = index;
                                   });
+                                  _pageController.animateToPage(
+                                    _selectedPage,
+                                    duration: const Duration(seconds: 1),
+                                    curve: Curves.ease,
+                                  );
                                 },
                                 itemCount: 2,
                                 itemBuilder: (ctx, index) {
