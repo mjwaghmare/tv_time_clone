@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tv_time_clone/Data/data.dart';
-import 'package:tv_time_clone/screens/utils/widgets.dart';
 
+import '../../Data/data.dart';
 import '../utils/app_colors.dart';
+import '../utils/widgets.dart';
 
 class Discover extends StatefulWidget {
   const Discover({Key key}) : super(key: key);
@@ -22,6 +22,9 @@ class _DiscoverState extends State<Discover> {
           child: SingleChildScrollView(
             child: Column(
               children: [
+                const SizedBox(height: 10.0),
+
+                //Search Bar
                 searchBar(_size),
                 //TOP SHOWS
                 const SizedBox(height: 20.0),
