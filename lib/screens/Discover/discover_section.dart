@@ -405,26 +405,33 @@ class _DiscoverState extends State<Discover> {
                       Positioned(
                           bottom: 10,
                           left: 10,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              Text(
-                                moviesList[i].movieName,
-                                style: const TextStyle(
-                                  fontSize: 22,
-                                  fontWeight: FontWeight.bold,
-                                  color: AppColors.whiteColor,
+                          child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20.0),
+                              color: AppColors.blackColor.withOpacity(0.2),
+                            ),
+                            padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 4.0),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  moviesList[i].movieName,
+                                  style: const TextStyle(
+                                    fontSize: 22,
+                                    fontWeight: FontWeight.bold,
+                                    color: AppColors.whiteColor,
+                                  ),
                                 ),
-                              ),
-                              Text(
-                                "${moviesList[i].movieGenre} - ${moviesList[i].movieYear}",
-                                style: const TextStyle(
-                                  fontSize: 16,
-                                  color: AppColors.whiteColor,
+                                Text(
+                                  "${moviesList[i].movieGenre} - ${moviesList[i].movieYear}",
+                                  style: const TextStyle(
+                                    fontSize: 16,
+                                    color: AppColors.whiteColor,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           )),
                       Positioned(
                         bottom: 10,
