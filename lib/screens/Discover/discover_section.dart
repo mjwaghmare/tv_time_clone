@@ -22,9 +22,8 @@ class _DiscoverState extends State<Discover> {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                const SizedBox(height: 10.0),
-
                 //Search Bar
+                const SizedBox(height: 10.0),
                 searchBar(_size),
                 //TOP SHOWS
                 const SizedBox(height: 20.0),
@@ -35,12 +34,14 @@ class _DiscoverState extends State<Discover> {
                 movies(_size),
                 const Divider(color: AppColors.greyColor),
                 //TOP SHOWS
+                const SizedBox(height: 10.0),
                 shows("Trending shows", _size),
                 const Divider(color: AppColors.greyColor),
+                //Discover
                 const SizedBox(height: 20.0),
                 discoverMore(_size),
-                const SizedBox(height: 20.0),
                 const Divider(color: AppColors.greyColor),
+                //Recent Activity
                 const SizedBox(height: 20.0),
                 recentActivity(_size),
                 const Divider(color: AppColors.greyColor),
