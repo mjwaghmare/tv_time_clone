@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:tv_time_clone/Data/data.dart';
+import 'package:tv_time_clone/screens/utils/widgets.dart';
 
 import '../utils/app_colors.dart';
 
@@ -339,7 +340,7 @@ class _ProfileState extends State<Profile> {
                 detailsTile("Stats", ""),
                 const SizedBox(height: 20.0),
                 SizedBox(
-                  width: 130,
+                  width: 150,
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
@@ -378,7 +379,6 @@ class _ProfileState extends State<Profile> {
       child: Container(
         decoration: const BoxDecoration(
           border: Border(
-            // top: BorderSide(width: 1.0, color: AppColors.greyColor),
             bottom: BorderSide(width: 0.5, color: AppColors.greyColor),
           ),
         ),
@@ -403,23 +403,6 @@ class _ProfileState extends State<Profile> {
                 ],
               )
             ],
-          ),
-        ),
-      ),
-    );
-  }
-
-  InkWell seeAllButton() {
-    return InkWell(
-      borderRadius: BorderRadius.circular(6.0),
-      onTap: () {},
-      child: const Padding(
-        padding: EdgeInsets.all(6.0),
-        child: Text(
-          "SEE ALL",
-          style: TextStyle(
-            fontSize: 13,
-            color: AppColors.yellowColor,
           ),
         ),
       ),
