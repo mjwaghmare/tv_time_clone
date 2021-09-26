@@ -382,7 +382,7 @@ class _DiscoverState extends State<Discover> {
                           )),
                       Positioned(
                         top: 8,
-                        right: 15,
+                        right: 8,
                         child: InkWell(
                           onTap: () {},
                           splashColor: AppColors.yellowColor,
