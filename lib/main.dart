@@ -1,3 +1,4 @@
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -49,33 +50,53 @@ class _MyHomePageState extends State<MyHomePage> {
     return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
       selectedItemColor: AppColors.whiteColor,
-      unselectedItemColor: AppColors.whiteColor.withOpacity(0.5),
+      unselectedItemColor: AppColors.whiteColor.withOpacity(0.4),
       onTap: onTabTapped,
       backgroundColor: AppColors.blackColor,
       currentIndex: _currentIndex,
-      items: const [
+      items: [
         BottomNavigationBarItem(
             icon: Tooltip(
               message: 'Shows',
-              child: Icon(Icons.live_tv_rounded),
+              child: ElasticIn(
+                child: const Icon(
+                  Icons.live_tv_rounded,
+                  size: 27,
+                ),
+              ),
             ),
             label: 'Shows'),
         BottomNavigationBarItem(
             icon: Tooltip(
               message: 'Movies',
-              child: Icon(Icons.movie_sharp),
+              child: ElasticIn(
+                child: const Icon(
+                  Icons.movie_sharp,
+                  size: 27,
+                ),
+              ),
             ),
             label: 'Movies'),
         BottomNavigationBarItem(
             icon: Tooltip(
               message: 'Discover',
-              child: Icon(Icons.search),
+              child: ElasticIn(
+                child: const Icon(
+                  Icons.search,
+                  size: 27,
+                ),
+              ),
             ),
             label: 'Discover'),
         BottomNavigationBarItem(
             icon: Tooltip(
               message: 'Profile',
-              child: Icon(Icons.person),
+              child: ElasticIn(
+                child: const Icon(
+                  Icons.person,
+                  size: 27,
+                ),
+              ),
             ),
             label: 'Profile')
       ],
