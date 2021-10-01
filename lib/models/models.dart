@@ -3,12 +3,20 @@ class Shows {
   String showStatus;
   String showNetworks;
   String showPosterUrl;
+  String showEpisode;
+  String showEpisodeName;
+  String showEpisodeTime;
+  bool showAired;
 
   Shows({
     this.showName,
     this.showStatus,
     this.showNetworks,
     this.showPosterUrl,
+    this.showEpisode,
+    this.showEpisodeName,
+    this.showEpisodeTime,
+    this.showAired,
   });
 }
 
@@ -17,11 +25,13 @@ class Movies {
   String movieYear;
   String movieGenre;
   String moviePosterUrl;
+  String daysBeforeRelease;
 
   Movies({
     this.movieName,
     this.movieYear,
     this.movieGenre,
     this.moviePosterUrl,
+    this.daysBeforeRelease,
   });
 }

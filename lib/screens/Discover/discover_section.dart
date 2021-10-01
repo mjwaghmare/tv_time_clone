@@ -13,6 +13,22 @@ class Discover extends StatefulWidget {
 
 class _DiscoverState extends State<Discover> {
   @override
+  void initState() {
+    super.initState();
+    // loader();
+  }
+
+  loader() {
+    Future.delayed(const Duration(seconds: 1)).whenComplete(() {
+      const Center(
+        child: CircularProgressIndicator(
+          valueColor: AlwaysStoppedAnimation<Color>(AppColors.yellowColor),
+        ),
+      );
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     Size _size = MediaQuery.of(context).size;
 
@@ -80,7 +96,7 @@ class _DiscoverState extends State<Discover> {
                       itemCount: showsList.length,
                       itemBuilder: (c, i) {
                         return Image.asset(
-                          "assets/images/shows/show_$i.jpg",
+                          showsList[i].showPosterUrl,
                           height: _size.height * 0.10,
                           width: _size.width * 0.16,
                           fit: BoxFit.cover,
@@ -216,7 +232,7 @@ class _DiscoverState extends State<Discover> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(6.0),
                         child: Image.asset(
-                          "assets/images/shows/show_$i.jpg",
+                          showsList[i].showPosterUrl,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -295,7 +311,7 @@ class _DiscoverState extends State<Discover> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(6.0),
                         child: Image.asset(
-                          "assets/images/movies/movie_$i.jpg",
+                          moviesList[i].moviePosterUrl,
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -369,7 +385,7 @@ class _DiscoverState extends State<Discover> {
                       ClipRRect(
                         borderRadius: BorderRadius.circular(6.0),
                         child: Image.asset(
-                          "assets/images/movies/movie_$i.jpg",
+                          moviesList[i].moviePosterUrl,
                           fit: BoxFit.cover,
                           height: size.height * 0.6,
                           width: size.width * 0.9,
