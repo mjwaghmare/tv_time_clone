@@ -18,3 +18,15 @@ InkWell seeAllButton() {
     ),
   );
 }
+
+Center brandText() {
+  return const Center(
+    child: Text(
+      "Made with 💛 by Manoj Waghmare",
+      style: TextStyle(
+        color: AppColors.whiteColor,
+        fontSize: 17,
+      ),
+    ),
+  );
+}

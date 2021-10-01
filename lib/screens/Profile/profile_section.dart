@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tv_time_clone/Data/data.dart';
-import 'package:tv_time_clone/screens/utils/widgets.dart';
 
+import '../../Data/data.dart';
 import '../utils/app_colors.dart';
+import '../utils/widgets.dart';
 
 class Profile extends StatefulWidget {
   const Profile({Key key}) : super(key: key);
@@ -384,15 +384,7 @@ class _ProfileState extends State<Profile> {
                   ),
                 ),
                 const SizedBox(height: 20.0),
-                const Center(
-                  child: Text(
-                    "Made with 💛 by Manoj Waghmare",
-                    style: TextStyle(
-                      color: AppColors.whiteColor,
-                      fontSize: 17,
-                    ),
-                  ),
-                ),
+                brandText(),
                 const SizedBox(height: 30.0),
               ],
             ),
