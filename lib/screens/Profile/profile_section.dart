@@ -65,11 +65,15 @@ class _ProfileState extends State<Profile> {
                                             if (index == 1) ...{
                                               Container(
                                                 height: _size.height * 0.30,
-                                                color: Colors.black.withOpacity(0.5),
+                                                color: Colors.black
+                                                    .withOpacity(0.5),
                                                 child: const Center(
                                                   child: Text(
                                                     'Teen Wolf 🐺',
-                                                    style: TextStyle(color: AppColors.whiteColor, fontSize: 24),
+                                                    style: TextStyle(
+                                                        color: AppColors
+                                                            .whiteColor,
+                                                        fontSize: 24),
                                                   ),
                                                 ),
                                               )
@@ -82,17 +86,23 @@ class _ProfileState extends State<Profile> {
                                                   top: 15,
                                                   left: 15,
                                                   child: Container(
-                                                    padding: const EdgeInsets.only(left: 4, top: 2),
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 4, top: 2),
                                                     height: 30,
                                                     width: 30,
                                                     decoration: BoxDecoration(
                                                       shape: BoxShape.circle,
-                                                      color: Colors.black.withOpacity(0.6),
+                                                      color: Colors.black
+                                                          .withOpacity(0.6),
                                                     ),
                                                     alignment: Alignment.center,
                                                     child: const Text(
                                                       "?",
-                                                      style: TextStyle(color: AppColors.whiteColor, fontSize: 23),
+                                                      style: TextStyle(
+                                                          color: AppColors
+                                                              .whiteColor,
+                                                          fontSize: 23),
                                                     ),
                                                   ))
                                             } else ...{
@@ -106,14 +116,19 @@ class _ProfileState extends State<Profile> {
                                                   child: Container(
                                                       height: 30,
                                                       width: 30,
-                                                      decoration: const BoxDecoration(
+                                                      decoration:
+                                                          const BoxDecoration(
                                                         shape: BoxShape.circle,
-                                                        color: AppColors.yellowColor,
+                                                        color: AppColors
+                                                            .yellowColor,
                                                       ),
-                                                      alignment: Alignment.center,
+                                                      alignment:
+                                                          Alignment.center,
                                                       child: const Icon(
-                                                        Icons.notifications_rounded,
-                                                        color: AppColors.blackColor,
+                                                        Icons
+                                                            .notifications_rounded,
+                                                        color: AppColors
+                                                            .blackColor,
                                                       )))
                                             } else ...{
                                               const SizedBox()
@@ -262,7 +277,8 @@ class _ProfileState extends State<Profile> {
                               borderRadius: BorderRadius.circular(6.0),
                               onTap: () {},
                               child: Container(
-                                margin: const EdgeInsets.symmetric(horizontal: 4.0),
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 4.0),
                                 height: _size.height * 0.6,
                                 width: _size.height * 0.2,
                                 child: ClipRRect(
@@ -314,7 +330,8 @@ class _ProfileState extends State<Profile> {
                               borderRadius: BorderRadius.circular(6.0),
                               onTap: () {},
                               child: Container(
-                                margin: const EdgeInsets.symmetric(horizontal: 4.0),
+                                margin:
+                                    const EdgeInsets.symmetric(horizontal: 4.0),
                                 height: _size.height * 0.6,
                                 width: _size.height * 0.2,
                                 child: ClipRRect(
@@ -366,6 +383,16 @@ class _ProfileState extends State<Profile> {
                     ),
                   ),
                 ),
+                const SizedBox(height: 20.0),
+                const Center(
+                  child: Text(
+                    "Made with 💛 by Manoj Waghmare",
+                    style: TextStyle(
+                      color: AppColors.whiteColor,
+                      fontSize: 17,
+                    ),
+                  ),
+                ),
                 const SizedBox(height: 30.0),
               ],
             ),
@@ -388,13 +415,15 @@ class _ProfileState extends State<Profile> {
             children: [
               Text(
                 title,
-                style: const TextStyle(color: AppColors.whiteColor, fontSize: 18),
+                style:
+                    const TextStyle(color: AppColors.whiteColor, fontSize: 18),
               ),
               Row(
                 children: [
                   Text(
                     value,
-                    style: const TextStyle(color: AppColors.whiteColor, fontSize: 18),
+                    style: const TextStyle(
+                        color: AppColors.whiteColor, fontSize: 18),
                   ),
                   const Icon(
                     Icons.chevron_right_rounded,
@@ -409,14 +438,17 @@ class _ProfileState extends State<Profile> {
     );
   }
 
-  Padding timeCard(Size _size, String name, String months, String day, String hours) {
+  Padding timeCard(
+      Size _size, String name, String months, String day, String hours) {
     return Padding(
       padding: const EdgeInsets.only(left: 4.0, right: 8.0),
       child: Container(
         padding: const EdgeInsets.all(2.0),
         width: _size.width * 0.55,
         height: _size.width * 0.26,
-        decoration: BoxDecoration(color: const Color(0xff363636), borderRadius: BorderRadius.circular(6.0)),
+        decoration: BoxDecoration(
+            color: const Color(0xff363636),
+            borderRadius: BorderRadius.circular(6.0)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -511,7 +543,9 @@ class _ProfileState extends State<Profile> {
       child: Container(
         width: _size.width * 0.55,
         height: _size.width * 0.26,
-        decoration: BoxDecoration(color: const Color(0xff363636), borderRadius: BorderRadius.circular(6.0)),
+        decoration: BoxDecoration(
+            color: const Color(0xff363636),
+            borderRadius: BorderRadius.circular(6.0)),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
